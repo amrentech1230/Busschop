@@ -64,7 +64,7 @@ export default function Hero() {
 
       {/* Main content */}
       <div className="relative h-full container-wide flex flex-col justify-center pb-32 md:pb-40 lg:pl-20">
-        <div className="max-w-5xl" style={{ margin: "50vh 0px 0 0" }}>
+        <div className="max-w-5xl" style={{ margin: "30vh 0px 0 0" }}>
           {/* Eyebrow */}
           <div className={`flex items-center gap-4 mb-6 ${t("delay-300")}`}>
             <div className="h-[1px] w-10 bg-[#8b7355]" />
