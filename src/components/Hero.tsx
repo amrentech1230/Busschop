@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import heroBg from "../assets/image/hero-bg.avif";
 
 export default function Hero() {
   const [loaded, setLoaded] = useState(false);
@@ -34,7 +35,7 @@ export default function Hero() {
             loaded ? "scale-100" : "scale-110"
           }`}
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=1920&q=85&auto=format&fit=crop'), url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1920&q=85&auto=format&fit=crop')`,
+            backgroundImage: `url('${heroBg.src}')`,
           }}
         />
         {/* Fallback gradient */}
