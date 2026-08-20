@@ -4,6 +4,7 @@ import { useScrollReveal } from "@/lib/useScrollReveal";
 
 const services = [
   {
+    id: undefined,
     number: "01",
     title: "New Swimming Pools",
     subtitle: "Custom Design & Build",
@@ -14,6 +15,7 @@ const services = [
       "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=700&q=80&auto=format&fit=crop",
   },
   {
+    id: "renovation",
     number: "02",
     title: "Pool Renovation",
     subtitle: "Restore & Transform",
@@ -24,6 +26,7 @@ const services = [
       "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=700&q=80&auto=format&fit=crop",
   },
   {
+    id: "technology",
     number: "03",
     title: "Pool Technology",
     subtitle: "Engineering Excellence",
@@ -98,6 +101,7 @@ function ServiceCard({ service, index }: ServiceCardProps) {
 
   return (
     <div
+      id={service.id}
       ref={ref}
       className={`grid lg:grid-cols-2 gap-10 lg:gap-16 items-center ${
         isReversed ? "lg:direction-rtl" : ""
