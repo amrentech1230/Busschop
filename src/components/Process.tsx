@@ -73,7 +73,7 @@ export default function Process() {
         {/* Steps */}
         <div className="relative">
           {/* Connecting Line */}
-          <div className="hidden md:block absolute left-8 top-0 bottom-0 w-[1px] bg-brand-sand" />
+          <div className="hidden lg:block absolute left-8 top-0 bottom-0 w-[1px] bg-brand-sand" />
 
           <div className="space-y-12 md:space-y-0">
             {steps.map((step, index) => (

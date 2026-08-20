@@ -62,7 +62,7 @@ export default function Introduction() {
 
             {/* Stats */}
             <div
-              className={`grid grid-cols-3 gap-6 mt-10 pt-10 border-t border-brand-sand transition-all duration-900 delay-600 ${
+              className={`grid grid-cols-3 gap-3 sm:gap-6 mt-10 pt-10 border-t border-brand-sand transition-all duration-900 delay-600 ${
                 isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-6"

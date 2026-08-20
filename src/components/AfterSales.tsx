@@ -57,7 +57,7 @@ export default function AfterSales() {
       <div className="container-wide">
         <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 lg:gap-20 items-start">
           {/* Left - Content */}
-          <div ref={headerRef} className="lg:sticky lg:top-32">
+          <div ref={headerRef} className="lg:sticky lg:top-24">
             <span
               className={`inline-block text-xs uppercase tracking-[0.3em] text-brand-accent mb-6 transition-all duration-700 ${
                 headerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"

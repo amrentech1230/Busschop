@@ -62,7 +62,7 @@ export default function Header() {
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-6 lg:gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.label}
@@ -79,7 +79,7 @@ export default function Header() {
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden lg:block">
+          <div className="hidden md:block">
             <a
               href="#contact"
               className={`inline-flex items-center gap-2 px-6 py-3 text-sm font-medium rounded-full transition-all duration-500 ${
@@ -110,7 +110,7 @@ export default function Header() {
           {/* Mobile Toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden relative z-10 w-10 h-10 flex flex-col items-center justify-center gap-1.5"
+            className="md:hidden relative z-10 w-10 h-10 flex flex-col items-center justify-center gap-1.5"
             aria-label="Toggle menu"
           >
             <span
@@ -137,7 +137,7 @@ export default function Header() {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 z-40 bg-brand-cream transition-all duration-700 lg:hidden ${
+        className={`fixed inset-0 z-40 bg-brand-cream transition-all duration-700 md:hidden ${
           mobileOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"

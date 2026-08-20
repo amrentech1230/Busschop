@@ -50,7 +50,7 @@ export default function Hero() {
 
       {/* Vertical label — left edge */}
       <div
-        className={`absolute left-6 md:left-10 top-1/2 -translate-y-1/2 flex flex-col items-center gap-4 transition-all duration-[1.5s] delay-[1.8s] ${loaded ? "opacity-100" : "opacity-0"}`}
+        className={`hidden lg:flex absolute left-6 md:left-10 top-1/2 -translate-y-1/2 flex-col items-center gap-4 transition-all duration-[1.5s] delay-[1.8s] ${loaded ? "opacity-100" : "opacity-0"}`}
       >
         <div className="w-[1px] h-20 bg-white/20" />
         <span
@@ -63,7 +63,7 @@ export default function Hero() {
       </div>
 
       {/* Main content */}
-      <div className="relative h-full container-wide flex flex-col justify-center pb-32 md:pb-40 pl-16 md:pl-24">
+      <div className="relative h-full container-wide flex flex-col justify-center pb-32 md:pb-40 lg:pl-20">
         <div className="max-w-5xl">
           {/* Eyebrow */}
           <div className={`flex items-center gap-4 mb-6 ${t("delay-300")}`}>
@@ -131,7 +131,7 @@ export default function Hero() {
             style={{ background: "rgba(10,15,20,0.7)", backdropFilter: "blur(12px)" }}
           >
             {stats.map(({ value, label }) => (
-              <div key={label} className="flex-1 px-6 py-5 flex flex-col gap-1">
+              <div key={label} className="flex-1 px-3 sm:px-6 py-4 sm:py-5 flex flex-col gap-1">
                 <span className="font-display text-2xl md:text-3xl font-medium" style={{ color: "#8b7355" }}>
                   {value}
                 </span>
