@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import heroBg from "../assets/image/hero-bg.avif";
 
 const stats = [
   { value: "350+", label: "Pools Realized" },
@@ -36,9 +37,7 @@ export default function Hero() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=1920&q=85&auto=format&fit=crop')`,
-            transition: loaded ? "transform 2s ease-out" : "none",
-            transform: loaded ? "scale(1)" : "scale(1.08)",
+            backgroundImage: `url('${heroBg.src}')`, 
           }}
         />
       </div>
