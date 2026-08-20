@@ -34,7 +34,7 @@ export default function Hero() {
             loaded ? "scale-100" : "scale-110"
           }`}
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1572331165267-854da2b021b1?w=1920&q=80&auto=format&fit=crop')`,
+            backgroundImage: `url('https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=1920&q=85&auto=format&fit=crop'), url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1920&q=85&auto=format&fit=crop')`,
           }}
         />
         {/* Fallback gradient */}
