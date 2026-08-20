@@ -35,7 +35,7 @@ export default function Hero() {
             loaded ? "scale-100" : "scale-110"
           }`}
           style={{
-            backgroundImage: `url('${heroBg.src}')`, 
+            backgroundImage: `url('${heroBg.src}')`,  
           }}
         />
         {/* Fallback gradient */}
