@@ -99,6 +99,7 @@ function ServiceCard({ service, index }: ServiceCardProps) {
   return (
     <div
       ref={ref}
+      id={index === 1 ? "renovation" : index === 2 ? "technology" : undefined}
       className={`grid lg:grid-cols-2 gap-10 lg:gap-16 items-center ${
         isReversed ? "lg:direction-rtl" : ""
       }`}
